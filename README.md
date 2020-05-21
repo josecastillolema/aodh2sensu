@@ -2,7 +2,15 @@
 
 Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [Sensu Core](https://docs.sensu.io/sensu-core/latest/) Server.
 
+## Install
+
+`pip3 install -r /tmp/requirements.txt`
+
 ## Use
+
+Run the `aodh2sensu` proxy. It must be run in a server reachable from OpenStack controllers and with access to the Sensu Server.
+ `$ python3 aodh2sensu`
+
 Create an Aodh alarm from OpenStack side:
 ```
 $ openstack alarm create \
@@ -16,8 +24,12 @@ $ openstack alarm create \
 --granularity 300 \
 --evaluation-periods 1 \
 --resource-type instance \
---resource-id $INSTANS_ID
+--resource-id $INSTANS_ID \
+--alarm-action 'http://x.y.z.w:50000' \
+--ok-action 'http://x.y.z.w:50000' \
+--insufficient-data-action 'http://x.y.z.w:50000'
 ```
+where x.y.z.w is the IP address of the server running `aodh2sensu` proxy.
 
 Confirm the alarm transitions from `insufficient_data` state to `ok` state:
 ```
