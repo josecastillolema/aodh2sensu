@@ -12,7 +12,7 @@ Run the `aodh2sensu` proxy. It must be run in a server reachable from OpenStack 
 
  `$ python3 aodh2sensu`
 
-Create an Aodh alarm from OpenStack side:
+Create an Aodh alarm from OpenStack side. This alarm will trigger an HTTP POST message to the `aodh2sensu` proxy:
 ```
 $ openstack alarm create \
 --name cpu_hi \
@@ -30,7 +30,7 @@ $ openstack alarm create \
 --ok-action 'http://x.y.z.w:50000' \
 --insufficient-data-action 'http://x.y.z.w:50000'
 ```
-where x.y.z.w is the IP address of the server running `aodh2sensu` proxy.
+where `x.y.z.w` is the IP address of the server running `aodh2sensu` proxy.
 
 Confirm the alarm transitions from `insufficient_data` state to `ok` state:
 ```
