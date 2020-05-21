@@ -19,6 +19,7 @@ $ openstack alarm create \
 --resource-id $INSTANS_ID
 ```
 
+Confirm the alarm transitions from `insufficient_data` state to `ok` state:
 ```
 $ openstack alarm list
 +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
