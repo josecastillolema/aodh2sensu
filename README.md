@@ -30,7 +30,7 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
    --ok-action 'http://x.y.z.w:50000' \
    --insufficient-data-action 'http://x.y.z.w:50000'
    ```
-where `x.y.z.w` is the IP address of the server running `aodh2sensu` proxy.
+   where `x.y.z.w` is the IP address of the server running `aodh2sensu` proxy.
 
 - Confirm the alarm transitions from `insufficient_data` state to `ok` state:
    ```
