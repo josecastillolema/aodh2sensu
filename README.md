@@ -49,6 +49,8 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
    | alarm_id                             | type                                       | name           | state             | severity | enabled |
    +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
    | c466d832-cfce-4488-9726-c631800a36b1 | gnocchi_resources_threshold                | cpu_hi4        | alarm             | low      | True    |
+   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+----
+
    ```
 
 - Check the alarm from the Uchiwa dashboard:
