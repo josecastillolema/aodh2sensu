@@ -10,7 +10,7 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
 
 - Run the `aodh2sensu` proxy. It must be run in a server reachable from OpenStack controllers and with access to the Sensu Server.
 
- `$ python3 aodh2sensu`
+   `$ python3 aodh2sensu`
 
 - Create an Aodh alarm from OpenStack side. This alarm will trigger an HTTP POST message to the `aodh2sensu` proxy:
    ```
@@ -33,14 +33,14 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
 where `x.y.z.w` is the IP address of the server running `aodh2sensu` proxy.
 
 - Confirm the alarm transitions from `insufficient_data` state to `ok` state:
-```
-$ openstack alarm list
-+--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
-| alarm_id                             | type                                       | name           | state             | severity | enabled |
-+--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
-| c466d832-cfce-4488-9726-c631800a36b1 | gnocchi_resources_threshold                | cpu_hi4        | ok                | low      | True    |
-+--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
-```
+   ```
+   $ openstack alarm list
+   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
+   | alarm_id                             | type                                       | name           | state             | severity | enabled |
+   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
+   | c466d832-cfce-4488-9726-c631800a36b1 | gnocchi_resources_threshold                | cpu_hi4        | ok                | low      | True    |
+   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
+   ```
 
 ## Docker
 To build the image:
