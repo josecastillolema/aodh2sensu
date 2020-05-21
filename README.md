@@ -9,6 +9,7 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
 ## Use
 
 Run the `aodh2sensu` proxy. It must be run in a server reachable from OpenStack controllers and with access to the Sensu Server.
+
  `$ python3 aodh2sensu`
 
 Create an Aodh alarm from OpenStack side:
