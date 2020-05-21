@@ -13,23 +13,23 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
  `$ python3 aodh2sensu`
 
 - Create an Aodh alarm from OpenStack side. This alarm will trigger an HTTP POST message to the `aodh2sensu` proxy:
-```
-$ openstack alarm create \
---name cpu_hi \
---type gnocchi_resources_threshold \
---description 'CPU High Average' \
---metric cpu_util4 \
---threshold 20.0 \
---comparison-operator gt \
---aggregation-method mean \
---granularity 300 \
---evaluation-periods 1 \
---resource-type instance \
---resource-id $INSTANS_ID \
---alarm-action 'http://x.y.z.w:50000' \
---ok-action 'http://x.y.z.w:50000' \
---insufficient-data-action 'http://x.y.z.w:50000'
-```
+   ```
+   $ openstack alarm create \
+   --name cpu_hi \
+   --type gnocchi_resources_threshold \
+   --description 'CPU High Average' \
+   --metric cpu_util4 \
+   --threshold 20.0 \
+   --comparison-operator gt \
+   --aggregation-method mean \
+   --granularity 300 \
+   --evaluation-periods 1 \
+   --resource-type instance \
+   --resource-id $INSTANS_ID \
+   --alarm-action 'http://x.y.z.w:50000' \
+   --ok-action 'http://x.y.z.w:50000' \
+   --insufficient-data-action 'http://x.y.z.w:50000'
+   ```
 where `x.y.z.w` is the IP address of the server running `aodh2sensu` proxy.
 
 - Confirm the alarm transitions from `insufficient_data` state to `ok` state:
