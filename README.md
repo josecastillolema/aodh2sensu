@@ -4,7 +4,7 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
 
 ## Install
 
-`pip3 install -r /tmp/requirements.txt`
+`$ pip3 install -r ./requirements.txt`
 
 ## Use
 
