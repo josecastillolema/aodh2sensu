@@ -4,7 +4,7 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
 
 ## Install
 
-`pip3 install -r /tmp/requirements.txt`
+`$ pip3 install -r ./requirements.txt`
 
 ## Use
 
@@ -43,17 +43,19 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
    ```
    
 - Generate load in the instance above the 20% threeshold, and wait for the alarm to transitition to `alarm` state:
-```
-$ openstack alarm list
-+--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
-| alarm_id                             | type                                       | name           | state             | severity | enabled |
-+--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
-| c466d832-cfce-4488-9726-c631800a36b1 | gnocchi_resources_threshold                | cpu_hi4        | alarm             | low      | True    |
-```
+   ```
+   $ openstack alarm list
+   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
+   | alarm_id                             | type                                       | name           | state             | severity | enabled |
+   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
+   | c466d832-cfce-4488-9726-c631800a36b1 | gnocchi_resources_threshold                | cpu_hi4        | alarm             | low      | True    |
+   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
+
+   ```
 
 - Check the alarm from the Uchiwa dashboard:
-![Screenshot 1 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screendshot1.png)
-![Screenshot 2 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screendshot2.png)
+![Screenshot 1 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot1.png)
+![Screenshot 2 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot2.png)
 
 
 - Stop the load generation in the instance, wait for the alarm to transition back to `ok` state:
@@ -63,14 +65,14 @@ $ openstack alarm list
    | alarm_id                             | type                                       | name           | state             | severity | enabled |
    +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
    | c466d832-cfce-4488-9726-c631800a36b1 | gnocchi_resources_threshold                | cpu_hi4        | ok                | low      | True    |
-   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+----
+   +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
    ```
 
 - Check the new state of the sensu alert:
-![Screenshot 3 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screendshot3.png)
+![Screenshot 3 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot3.png)
 
 - Confirm it has dissapeared from the list of active alerts:
-![Screenshot 4 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screendshot4.png)
+![Screenshot 4 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot4.png)
 
 
 ## Docker
@@ -81,3 +83,6 @@ To build the image:
 To run the image:
 
 `$ podman run -p 50000:50000 aodh2sensu`
+
+Check logs:
+`$ podman logs `
