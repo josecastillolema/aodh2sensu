@@ -83,3 +83,6 @@ To build the image:
 To run the image:
 
 `$ podman run -p 50000:50000 aodh2sensu`
+
+Check logs:
+`$ podman logs `
