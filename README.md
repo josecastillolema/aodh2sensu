@@ -8,11 +8,11 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
 
 ## Use
 
-Run the `aodh2sensu` proxy. It must be run in a server reachable from OpenStack controllers and with access to the Sensu Server.
+- Run the `aodh2sensu` proxy. It must be run in a server reachable from OpenStack controllers and with access to the Sensu Server.
 
  `$ python3 aodh2sensu`
 
-Create an Aodh alarm from OpenStack side. This alarm will trigger an HTTP POST message to the `aodh2sensu` proxy:
+- Create an Aodh alarm from OpenStack side. This alarm will trigger an HTTP POST message to the `aodh2sensu` proxy:
 ```
 $ openstack alarm create \
 --name cpu_hi \
@@ -32,7 +32,7 @@ $ openstack alarm create \
 ```
 where `x.y.z.w` is the IP address of the server running `aodh2sensu` proxy.
 
-Confirm the alarm transitions from `insufficient_data` state to `ok` state:
+- Confirm the alarm transitions from `insufficient_data` state to `ok` state:
 ```
 $ openstack alarm list
 +--------------------------------------+--------------------------------------------+----------------+-------------------+----------+---------+
