@@ -52,8 +52,8 @@ $ openstack alarm list
 ```
 
 - Check the alarm from the Uchiwa dashboard:
-![Screenshot 1 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screendshot1.png)
-![Screenshot 2 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screendshot2.png)
+![Screenshot 1 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot1.png)
+![Screenshot 2 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot2.png)
 
 
 - Stop the load generation in the instance, wait for the alarm to transition back to `ok` state:
@@ -67,10 +67,10 @@ $ openstack alarm list
    ```
 
 - Check the new state of the sensu alert:
-![Screenshot 3 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screendshot3.png)
+![Screenshot 3 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot3.png)
 
 - Confirm it has dissapeared from the list of active alerts:
-![Screenshot 4 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screendshot4.png)
+![Screenshot 4 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot4.png)
 
 
 ## Docker
