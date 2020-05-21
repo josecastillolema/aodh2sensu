@@ -1,6 +1,6 @@
 # aodh2sensu
 
-Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into Sensu Server.
+Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [Sensu Core](https://docs.sensu.io/sensu-core/latest/) Server.
 
 ## Docker
 To build the image:
