@@ -111,3 +111,28 @@ Check logs:
 ```
 $ podman logs aodh2sensu
 ```
+
+## Systemd
+
+To start `aodh2sensu` as a systemd service.
+
+### Normal
+
+
+### Docker
+```
+[Unit]
+Description=aodh2sensu via podman in Systemd
+
+[Service]
+Restart=on-failure
+ExecStartPre=/usr/bin/rm -f /%t/%n-pid /%t/%n-cid
+ExecStart=/usr/bin/podman run --conmon-pidfile  /%t/%n-pid  --cidfile /%t/%n-cid -d --name aodh2sensu -p 50000:50000 aodh2sensu
+ExecStop=/usr/bin/sh -c "/usr/bin/podman rm -f `cat /%t/%n-cid`"
+KillMode=none
+Type=forking
+PIDFile=/%t/%n-pid
+
+[Install]
+WantedBy=multi-user.target
+```
