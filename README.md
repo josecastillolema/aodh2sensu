@@ -114,7 +114,7 @@ $ podman logs aodh2sensu
 
 ## Systemd
 
-To start `aodh2sensu` as a systemd service.
+To run `aodh2sensu` as a systemd service.
 
 ### Normal
 
