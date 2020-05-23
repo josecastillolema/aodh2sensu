@@ -22,7 +22,9 @@ Options:
 
 - Run the `aodh2sensu` proxy. `sensu_url` must point to the sensu server. The proxy must be run in a server reachable from OpenStack controllers and with access to the Sensu Server (for example, the Sensu Server itself).
 
-   `$ ./aodh2sensu`
+   ```
+   $ ./aodh2sensu
+   ```
 
 - Create an Aodh alarm from OpenStack side. This example alarm will trigger an HTTP POST message to the `aodh2sensu` proxy whenever the cpu utilization of $INSTANCE_ID goes above 20%:
    ```
@@ -90,7 +92,9 @@ Options:
 ## Docker
 To build the image:
 
-`$ buildah build-using-dockerfile -t aodh2sensu .`
+```
+$ buildah build-using-dockerfile -t aodh2sensu .
+```
 
 To run the image:
 
@@ -100,9 +104,11 @@ $ podman run -p 50000:50000 aodh2sensu
 
 Or run pointing to a specific Sensu Server URL:
 
-`
+```
 $ podman run -p 50000:50000 -e SENSU_URL=x.y.z.w:p aodh2sensu
-`
+```
 
 Check logs:
-`$ podman logs `
+```
+$ podman logs `
+```
