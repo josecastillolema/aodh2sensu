@@ -18,9 +18,9 @@ Options:
   --sensu-url URL       if not specified, defaults to localhost:4567
 ```
 
-- Run the `aodh2sensu` proxy. `sensu_url` must point to the sensu server. This proxy must be run in a server reachable from OpenStack controllers and with access to the Sensu Server.
+- Run the `aodh2sensu` proxy. `sensu_url` must point to the sensu server. The proxy must be run in a server reachable from OpenStack controllers and with access to the Sensu Server (for example, the Sensu Server itself).
 
-   `$ python3 aodh2sensu`
+   `$ ./aodh2sensu`
 
 - Create an Aodh alarm from OpenStack side. This example alarm will trigger an HTTP POST message to the `aodh2sensu` proxy whenever the cpu utilization of $INSTANCE_ID goes above 20%:
    ```
@@ -92,7 +92,10 @@ To build the image:
 
 To run the image:
 
-`$ podman run -p 50000:50000 aodh2sensu`
+```
+$ podman run -p 50000:50000 aodh2sensu                                 or
+$ podman run -p 50000:50000 -e SENSU_URL=x.y.z.w:p aodh2sensu
+```
 
 Check logs:
 `$ podman logs `
