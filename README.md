@@ -99,16 +99,16 @@ $ buildah build-using-dockerfile -t aodh2sensu .
 To run the image:
 
 ```
-$ podman run -p 50000:50000 aodh2sensu
+$ podman run --name aodh2sensu -d -p 50000:50000 aodh2sensu
 ```
 
 Pointing to a specific Sensu Server URL:
 
 ```
-$ podman run -p 50000:50000 -e SENSU_URL=x.y.z.w:p aodh2sensu
+$ podman run --name aodh2sensu -d -p 50000:50000 -e SENSU_URL=x.y.z.w:p aodh2sensu
 ```
 
 Check logs:
 ```
-$ podman logs `
+$ podman logs aodh2sensu
 ```
