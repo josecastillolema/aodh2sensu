@@ -93,9 +93,14 @@ To build the image:
 To run the image:
 
 ```
-$ podman run -p 50000:50000 aodh2sensu                                 or
-$ podman run -p 50000:50000 -e SENSU_URL=x.y.z.w:p aodh2sensu
+$ podman run -p 50000:50000 aodh2sensu
 ```
+
+Or run pointing to a specific Sensu Server URL:
+
+`
+$ podman run -p 50000:50000 -e SENSU_URL=x.y.z.w:p aodh2sensu
+`
 
 Check logs:
 `$ podman logs `
