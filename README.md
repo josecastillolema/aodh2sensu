@@ -8,6 +8,16 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
 
 ## Use
 
+```
+Usage: aodh2sensu [options]
+
+Imports OpenStack Aodh alarms into Sensu Core Server.
+
+Options:
+  -h, --help            show this help message and exit
+  --sensu-url URL       if not specified, defaults to localhost:4567
+```
+
 - Run the `aodh2sensu` proxy. `sensu_url` must point to the sensu server. This proxy must be run in a server reachable from OpenStack controllers and with access to the Sensu Server.
 
    `$ python3 aodh2sensu`
