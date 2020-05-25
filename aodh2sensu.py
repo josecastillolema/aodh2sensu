@@ -57,7 +57,7 @@ def createSensuAlarm (sensu_alarm):
    r = requests.post('http://'+sensu_url+'/results', data=json.dumps(body), headers=headers)
 
    if r.status_code == 200 or r.status_code == 202:      
-      print('The response code is ' + r.status_code + '. Message sent succesfully')
+      print('The response code is ' + str(r.status_code) + '. Message sent succesfully')
       # logging.info('The response code is 200. Message sent succesfully')
    elif r.status_code == 405:
       print('The response code is 405. There was an error')
