@@ -117,17 +117,29 @@ $ podman logs aodh2sensu
 To run `aodh2sensu` as a systemd service.
 
 ### Normal
+```
+# cat /usr/lib/systemd/system/aodh2sensu.service
+[Unit]
+Description=aodh2sensu service
 
+[Service]
+Type=simple
+ExecStart=/opt/aodh2sensu/aodh2sensu.py
+
+[Install]
+WantedBy=multi-user.target
+```
 
 ### Docker
 ```
+# cat ~/.config/systemd/user/aodh2sensu.service 
 [Unit]
-Description=aodh2sensu via podman in Systemd
+Description=aodh2sensu service via podman
 
 [Service]
 Restart=on-failure
 ExecStartPre=/usr/bin/rm -f /%t/%n-pid /%t/%n-cid
-ExecStart=/usr/bin/podman run --conmon-pidfile  /%t/%n-pid  --cidfile /%t/%n-cid -d --name aodh2sensu -p 50000:50000 aodh2sensu
+ExecStart=/usr/bin/podman run --conmon-pidfile  /%t/%n-pid  --cidfile /%t/%n-cid --add-host="localhost:10.88.0.1" -d --name aodh2sensu -p 50000:50000 aodh2sensu
 ExecStop=/usr/bin/sh -c "/usr/bin/podman rm -f `cat /%t/%n-cid`"
 KillMode=none
 Type=forking
@@ -135,4 +147,5 @@ PIDFile=/%t/%n-pid
 
 [Install]
 WantedBy=multi-user.target
+
 ```
