@@ -11,7 +11,7 @@ $ pip3 install -r ./requirements.txt
 ## Use
 
 ```
-Usage: aodh2sensu [options]
+Usage: aodh2sensu.py [options]
 
 Imports OpenStack Aodh alarms into Sensu Core Server.
 
@@ -23,7 +23,7 @@ Options:
 - Run the `aodh2sensu` proxy. `sensu_url` must point to the sensu server. The proxy must be run in a server reachable from OpenStack controllers and with access to the Sensu Server (for example, the Sensu Server itself).
 
    ```
-   $ ./aodh2sensu
+   $ ./aodh2sensu.py
    ```
 
 - Create an Aodh alarm from OpenStack side. This example alarm will trigger an HTTP POST message to the `aodh2sensu` proxy whenever the cpu utilization of $INSTANCE_ID goes above 20%:
@@ -84,7 +84,7 @@ Options:
 - Check the new state of the sensu alert:
 ![Screenshot 3 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot3.png)
 
-- Confirm it has dissapeared from the list of active alerts:
+- Confirm it has disappeared from the list of active alerts:
 ![Screenshot 4 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot4.png)
 
 
