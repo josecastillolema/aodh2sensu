@@ -70,9 +70,8 @@ Options:
    ```
 
 - Check the alarm from the Uchiwa dashboard:
-![Screenshot 1 of the Uchiwa dashboard](/doc/img/screenshot1.png)
 ![Screenshot 1 of the Uchiwa dashboard](https://raw.githubusercontent.com/josecastillolema/aodh2sensu/master/doc/img/screenshot1.png)
-![Screenshot 2 of the Uchiwa dashboard](/doc/img/screenshot2.png)
+![Screenshoto 2 of the Uchiwa dashboard](https://github.com/josecastillolema/aodh2sensu/blob/master/doc/img/screenshot2.png)
 
 
 - Stop the load generation in the instance, wait for the alarm to transition back to `ok` state:
