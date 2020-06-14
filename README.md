@@ -26,7 +26,7 @@ Options:
    $ ./aodh2sensu.py
    ```
 
-- Create an Aodh alarm from OpenStack side. This example alarm will trigger an HTTP POST message to the `aodh2sensu` proxy whenever the cpu utilization of $INSTANCE_ID goes above 20%:
+- Create an Aodh alarm from OpenStack side. This example alarm will trigger an HTTP POST message to the `aodh2sensu` proxy whenever the cpu utilization of `$INSTANCE_ID` goes above 20%:
    ```
    $ openstack alarm create \
    --name cpu_hi \
@@ -39,7 +39,7 @@ Options:
    --granularity 300 \
    --evaluation-periods 1 \
    --resource-type instance \
-   --resource-id $INSTANSCE_ID \
+   --resource-id $INSTANCE_ID \
    --alarm-action 'http://x.y.z.w:50000' \
    --ok-action 'http://x.y.z.w:50000' \
    --insufficient-data-action 'http://x.y.z.w:50000'
