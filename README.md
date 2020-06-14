@@ -131,7 +131,7 @@ WantedBy=multi-user.target
 ```
 
 ### Docker
-```
+```ini
 # cat ~/.config/systemd/user/aodh2sensu.service 
 [Unit]
 Description=aodh2sensu service via podman
