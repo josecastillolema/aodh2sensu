@@ -117,7 +117,7 @@ $ podman logs aodh2sensu
 To run `aodh2sensu` as a systemd service.
 
 ### Normal
-```
+```ini
 # cat /usr/lib/systemd/system/aodh2sensu.service
 [Unit]
 Description=aodh2sensu service
