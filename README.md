@@ -1,4 +1,4 @@
-# [aodh2sensu](https://github.com/josecastillolema/aodh2sensu)
+# aodh2sensu
 
 Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [Sensu Core](https://docs.sensu.io/sensu-core/latest/) Server.
 
