@@ -1,3 +1,8 @@
+![GitHub](https://img.shields.io/github/license/josecastillolema/aodh2sensu)
+![GitHub language count](https://img.shields.io/github/languages/count/josecastillolema/aodh2sensu)
+![GitHub top language](https://img.shields.io/github/languages/top/josecastillolema/aodh2sensu)
+[![Requirements Status](https://requires.io/github/josecastillolema/aodh2sensu/requirements.svg?branch=master)](https://requires.io/github/josecastillolema/aodh2sensu/requirements/?branch=master)
+
 # aodh2sensu
 
 Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [Sensu Core](https://docs.sensu.io/sensu-core/latest/) Server.
