@@ -26,9 +26,9 @@ jobs:
       uses: docker/build-push-action@v1.1.0
       with:
         # Username used to log in to a Docker registry. If not set then no login will occur
-        username: josecastillolema # optional
+        username: 11009103|github-aodh2sensu # optional
         # Password or personal access token used to log in to a Docker registry. If not set then no login will occur
-        password: 4ac6cf6b-23f8-404c-afc5-1d2eb5a72704     # optional
+        password: eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJmZTBkZmM5MWYzYWQ0YzI4YWFmYTc0MTZiOTI0ZTIzNyJ9.avH8eOeBRjdgRHydTjZ2hzGjYrP1enYYa4VzWf5seruclcIvmFOwkLHXndk_064Qp2P9giwF-u1TIUHSVmUbFu8T3s9co8Ud4uUKGT4jq5Y_5d22gn3AgDThRHa2SPcbrvh8bY6_-65hG00Qq8jID83dG_80r7QhD-6mEcXOfZJC5wArvJcRNg1tfB-LFOcS9nWUxIWwnmm0QMUFyhA-gf0fpDQAgJiMhvDWM7Soi_Xj-4IMIwXxnRwC0WvSdsCAanupvaSBl5adSoAU4tKMFUFmj6UNza59LII7cCIMx50J8W_LtH8WHccD_wMZkOgeGI_bjL3uJZJ2tliWkBPgjCwV6ywfZR81giuqjXKNPbLnbOOq7doRCfgcZGSwRCWHV6hzBffmI6M6_CuRt_yDGXiXOyzi-kEdAFUbHRa9ow0232BGQOq0OqKUoDFqG1NTz0s0kfv2_bBb3kw7xlk1shG1UgBHLQyMVr1WSm_JAhL0P8xSYNupW6G4VVUKuvb1vWIblTTgPtScvszW0mktn2jvEyjw-SDvxLyJELkGIB0pEKdK0s-tEZx3ftaHig4-qkcdiVCAR6zNEvEZinb8sUe9M53gR2UgUKulsso23H_2P394BIvivF6uP_vtW7j-cywvUaDZP1fD4i-v5-bS5mWJcrT5MRYl2gNlPZzyG_M     # optional
         # Server address of Docker registry. If not set then will default to Docker Hub
         #registry: # optional
         # Docker repository to tag the image with
