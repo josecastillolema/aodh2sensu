@@ -1,5 +1,5 @@
 # FROM python:3
-FROM ubi8/python-36
+FROM registry.redhat.io/ubi8/python-36
 
 MAINTAINER Jose Castillo Lema <josecastillolema@gmail.com>
 
