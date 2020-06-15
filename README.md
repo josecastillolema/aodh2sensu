@@ -1,9 +1,11 @@
 ![GitHub](https://img.shields.io/github/license/josecastillolema/aodh2sensu)
 ![GitHub language count](https://img.shields.io/github/languages/count/josecastillolema/aodh2sensu)
 ![GitHub top language](https://img.shields.io/github/languages/top/josecastillolema/aodh2sensu)
-[![Requirements Status](https://requires.io/github/josecastillolema/aodh2sensu/requirements.svg?branch=master)](https://requires.io/github/josecastillolema/aodh2sensu/requirements/?branch=master)
+![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/josecastillolema/aodh2sensu)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/josecastillolema/aodh2sensu/flask)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/josecastillolema/aodh2sensu/requests)
+[![Requirements Status](https://requires.io/github/josecastillolema/aodh2sensu/requirements.svg?branch=master)](https://requires.io/github/josecastillolema/aodh2sensu/requirements/?branch=master)
+
 
 # aodh2sensu
 
