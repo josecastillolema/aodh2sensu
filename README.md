@@ -5,6 +5,7 @@
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/josecastillolema/aodh2sensu/flask)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/josecastillolema/aodh2sensu/requests)
 [![Requirements Status](https://requires.io/github/josecastillolema/aodh2sensu/requirements.svg?branch=master)](https://requires.io/github/josecastillolema/aodh2sensu/requirements/?branch=master)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/josecastillolema/aodh2sensu/CI)
 
 
 # aodh2sensu
