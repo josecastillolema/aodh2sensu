@@ -36,6 +36,11 @@ Options:
    ```
    $ ./aodh2sensu.py
    ```
+   or alternatively via pipenv:
+   ```
+   $ pipenv shell
+   $ ./aodh2sensu.py
+   ```
 
 - Create an Aodh alarm from OpenStack side. This example alarm will trigger an HTTP POST message to the `aodh2sensu` proxy whenever the cpu utilization of `$INSTANCE_ID` goes above 20%:
    ```
