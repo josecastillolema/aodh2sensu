@@ -30,16 +30,16 @@ Always write a clear log message for the commits. One-line messages are fine for
     
 ### Preparing the Fork
 
-1. Click 'Fork' on Github, creating e.g. ``yourname/theproject``.
-2. Clone your project: ``git clone git@github.com:yourname/theproject``.
+1. Click 'Fork' on Github, creating e.g. ``username/theproject``.
+2. Clone your project: ``git clone git@github.com:username/theproject``.
 3. ``cd theproject``
 4. `Create and activate a virtual environment <https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments>`_.
-5. Install the development requirements: ``pip install -r dev-requirements.txt``.
+5. Install the development requirements: ``pip install -r requirements.txt``.
 6. Create a branch: ``git checkout -b foo-the-bars 1.3``.
 
 ### Making the Changes
 
-1. Add changelog entry crediting yourself.
+1. Add changelog entry.
 2. Write tests expecting the correct/fixed functionality; make sure they fail.
 3. Hack, hack, hack.
 4. Run tests again, making sure they pass.
@@ -47,8 +47,8 @@ Always write a clear log message for the commits. One-line messages are fine for
 
 ### Creating Pull Requests
 
-1. Push your commit to get it back up to your fork: ``git push origin HEAD``
-2. Visit Github, click handy "Pull request" button that it will make upon
+1. Push the commit to get it back up to your fork: ``git push origin HEAD``
+2. Visit Github, click "Pull request" button that it will make upon
    noticing your new branch.
 3. In the description field, write down issue number (if submitting code fixing
    an existing issue) or describe the issue + your fix (if submitting a wholly
