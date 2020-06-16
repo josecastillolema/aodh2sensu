@@ -31,7 +31,7 @@ Always write a clear log message for the commits. One-line messages are fine for
 ### Preparing the Fork
 
 1. Click 'Fork' on Github, creating e.g. ``username/theproject``.
-2. Clone your project: ``git clone git@github.com:username/theproject``.
+2. Clone the project: ``git clone git@github.com:username/theproject``.
 3. ``cd theproject``
 4. `Create and activate a virtual environment <https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments>`_.
 5. Install the development requirements: ``pip install -r requirements.txt``.
