@@ -52,7 +52,7 @@ Always write a clear log message for the commits. One-line messages are fine for
 3. In the description field, write down issue number (if submitting code fixing
    an existing issue) or describe the issue + your fix (if submitting a wholly
    new bugfix).
-4. Hit 'submit'!
+4. Hit 'submit'
 
 ## Coding conventions
 
