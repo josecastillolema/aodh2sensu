@@ -28,8 +28,7 @@ Always write a clear log message for your commits. One-line messages are fine fo
     > 
     > A paragraph describing what changed and its impact."
     
-Preparing your Fork
-^^^^^^^^^^^^^^^^^^^
+### Preparing your Fork
 
 1. Click 'Fork' on Github, creating e.g. ``yourname/theproject``.
 2. Clone your project: ``git clone git@github.com:yourname/theproject``.
@@ -38,8 +37,7 @@ Preparing your Fork
 5. Install the development requirements: ``pip install -r dev-requirements.txt``.
 6. Create a branch: ``git checkout -b foo-the-bars 1.3``.
 
-Making your Changes
-^^^^^^^^^^^^^^^^^^^
+### Making your Changes
 
 1. Add changelog entry crediting yourself.
 2. Write tests expecting the correct/fixed functionality; make sure they fail.
@@ -47,8 +45,7 @@ Making your Changes
 4. Run tests again, making sure they pass.
 5. Commit your changes: ``git commit -m "Foo the bars"``
 
-Creating Pull Requests
-^^^^^^^^^^^^^^^^^^^^^^
+### Creating Pull Requests
 
 1. Push your commit to get it back up to your fork: ``git push origin HEAD``
 2. Visit Github, click handy "Pull request" button that it will make upon
@@ -61,8 +58,12 @@ Creating Pull Requests
 
 ## Coding conventions
 
-Start reading our code and you'll get the hang of it. We optimize for readability:
-
+  * **Follow the style you see used in the primary repository**! Consistency with
+  the rest of the project always trumps other considerations. It doesn't matter
+  if you have your own style or if the rest of the code breaks with the greater
+  community - just follow along.
+  * Python projects usually follow the `PEP-8
+  <http://www.python.org/dev/peps/pep-0008/>`_ guidelines
   * We indent using two spaces (soft tabs)
   * We use HAML for all views
   * We avoid logic in views, putting HTML generators into helpers
