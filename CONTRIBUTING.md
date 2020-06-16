@@ -58,6 +58,6 @@ Always write a clear log message for the commits. One-line messages are fine for
 
   * **Follow the style you see used in the primary repository**. Consistency with
   the rest of the project always trumps other considerations.
-  * Python projects usually follow the [PEP-8 guidelines](https://www.python.org/dev/peps/pep-0008/)
-  * The code is indented using four spaces (soft tabs)
+  * Python projects usually follow the [PEP-8 guidelines](https://www.python.org/dev/peps/pep-0008/).
+  * The code is indented using four spaces (soft tabs).
   * This is open source software. Consider the people who will read the code.
