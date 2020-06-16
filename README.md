@@ -7,6 +7,7 @@
 [![Requirements Status](https://requires.io/github/josecastillolema/aodh2sensu/requirements.svg?branch=master)](https://requires.io/github/josecastillolema/aodh2sensu/requirements/?branch=master)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/josecastillolema/aodh2sensu/CI)
 ![Python application](https://github.com/josecastillolema/aodh2sensu/workflows/Python%20application/badge.svg)
+![CI](https://github.com/josecastillolema/aodh2sensu/workflows/CI/badge.svg)
 
 
 # aodh2sensu
