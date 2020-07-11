@@ -16,12 +16,12 @@ Imports [OpenStack Aodh](https://docs.openstack.org/aodh/latest/) alarms into [S
 
 ## Install
 
-#### Via with requirements file
+### Via with requirements file
 ```
 $ pip3 install -r ./requirements.txt
 ```
 
-#### Via pipenv pipfile
+### Via pipenv pipfile
 ```
 $ pipenv install
 ```
