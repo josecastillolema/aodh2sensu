@@ -52,10 +52,10 @@ Options:
 - Create an Aodh alarm from OpenStack side. This example alarm will trigger an HTTP POST message to the `aodh2sensu` proxy whenever the cpu utilization of `$INSTANCE_ID` goes above 20%:
    ```
    $ openstack alarm create \
-   --name cpu_hi \
+   --name cpu_hi4 \
    --type gnocchi_resources_threshold \
    --description 'CPU High Average' \
-   --metric cpu_util4 \
+   --metric cpu_util \
    --threshold 20.0 \
    --comparison-operator gt \
    --aggregation-method mean \
