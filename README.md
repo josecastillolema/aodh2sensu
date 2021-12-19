@@ -4,7 +4,6 @@
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/josecastillolema/aodh2sensu)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/josecastillolema/aodh2sensu/flask)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/josecastillolema/aodh2sensu/requests)
-[![Requirements Status](https://requires.io/github/josecastillolema/aodh2sensu/requirements.svg?branch=master)](https://requires.io/github/josecastillolema/aodh2sensu/requirements/?branch=master)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/josecastillolema/aodh2sensu/CI)
 ![Python application](https://github.com/josecastillolema/aodh2sensu/workflows/Python%20application/badge.svg)
 ![CI](https://github.com/josecastillolema/aodh2sensu/workflows/CI/badge.svg)
